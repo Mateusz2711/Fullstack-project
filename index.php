@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 
+<?php
+$host = 'mysql';
+$user = 'root';
+$pass = 'rootpassword';
+$db   = 'circuleather';
+
+$conn = new mysqli($host, $user, $pass, $db);
+if ($conn->connect_error) {
+    die("fout to conect " . $conn->connect_error);
+}
+echo "Conected met database";
+?>
+
 <body>
 <?php echo "Hello World"; ?>
 <h1>Welcome to my website</h1>
