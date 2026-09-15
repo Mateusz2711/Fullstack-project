@@ -1,0 +1,8 @@
+body{ background-color: gray;
+margin: 20px;
+}
+table{border-collapse: collapse; width: 100%; margin-top: 20px;}
+
+th, td {border: 1px solid #ddd; padding: 10ex; text-align:left ;}
+th {background-color: #f9f9f9;}
+tr:nth-child(even){background-color: #f9f9f9;}

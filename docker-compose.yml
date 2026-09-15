@@ -6,6 +6,8 @@ services:
     container_name: circuleather-app
     ports:
       - "8080:80"
+    volumes:
+      - .:/var/www/html  # <-- Live updates
     depends_on:
       - mysql
     environment:
