@@ -1,8 +1,51 @@
 body{ background-color: gray;
 margin: 20px;
 }
-table{border-collapse: collapse; width: 100%; margin-top: 20px;}
 
-th, td {border: 1px solid #ddd; padding: 10ex; text-align:left ;}
-th {background-color: #f9f9f9;}
-tr:nth-child(even){background-color: #f9f9f9;}
+
+
+/*Vorrad table*/
+
+table{border-collapse: collapse; width: 100%; margin-top: 10px;}
+
+th, td {border: 2px solid #d39e0c; padding: 5px; text-align:left ;}
+th {background-color: #f6d21e;}
+tr:nth-child(even){background-color: #f6d21e;;}
+
+
+tr:nth-child(odd) td:first-child {
+  background-color: #ffeb3b; 
+}
+
+
+tr:nth-child(even) td:first-child {
+  background-color: #ff9800; 
+}
+
+
+
+/*Product pagina */
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*Login pagina*/
+

@@ -34,7 +34,7 @@ $result = $conn->query($sql);
 <body>
 
 <h1>Vorrad</h1>
-<?php if ($result && $result->num_row>0): ?>
+<?php if ($result && $result->num_rows>0): ?>
     <table>
         <thead>
             <tr>
@@ -44,6 +44,7 @@ $result = $conn->query($sql);
                 <th>bruikbaar</th>
                 <th>soort</th>
                 <th>manier van looien</th>
+                <th>maat</th>
             </tr>    
         </thead>
     
@@ -65,7 +66,9 @@ $result = $conn->query($sql);
     <?php else:?>
         <p> Geen data of tabel is leeg </p>
     <?php endif; ?>
-    <?php $conn->close();?>
+    <?php $conn->close();?> 
+
+
 
 
 
